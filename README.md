@@ -1,1 +1,2 @@
-# Capstone-Project on E-coomerce website
+# Capstone-Project on NovaStep E-coomerce website
+
