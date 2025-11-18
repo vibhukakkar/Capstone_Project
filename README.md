@@ -1,2 +1,2 @@
-# Capstone-Project on NovaStep E-commerce website
+# Capstone-Project on Apex E-commerce website
 
