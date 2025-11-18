@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Athletics - Track Your Order</title>
+    <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Apex</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#orders">My Orders</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tracking Container -->
+    <div class="tracking-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="#orders">My Orders</a>
+            <span>/</span>
+            <span>Track Order</span>
+        </div>
+
+        <!-- Success Banner -->
+        <div class="success-banner">
+            <div class="success-icon">🎉</div>
+            <h1>Order Confirmed Successfully!</h1>
+            <p>Thank you for shopping with Apex Athletics</p>
+            <div class="order-number">Order #APX84726</div>
+        </div>
+
+        <!-- Tracking Content -->
+        <div class="tracking-content">
+            <!-- Tracking Timeline -->
+            <div class="tracking-timeline">
+                <h2 class="section-title">
+                    📦 Order Tracking
+                </h2>
+
+                <div class="timeline">
+                    <!-- Order Placed -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-dot">✓</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Order Placed</h3>
+                                <span class="timeline-time">18 Nov, 10:30 AM</span>
+                            </div>
+                            <p class="timeline-description">Your order has been successfully placed and confirmed.</p>
+                            <div class="timeline-location">📍 Mumbai, Maharashtra</div>
+                        </div>
+                    </div>
+
+                    <!-- Order Confirmed -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-dot">✓</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Payment Confirmed</h3>
+                                <span class="timeline-time">18 Nov, 10:35 AM</span>
+                            </div>
+                            <p class="timeline-description">Payment received and verified successfully.</p>
+                            <div class="timeline-location">📍 Payment Gateway</div>
+                        </div>
+                    </div>
+
+                    <!-- Processing -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-dot">✓</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Order Processing</h3>
+                                <span class="timeline-time">18 Nov, 2:15 PM</span>
+                            </div>
+                            <p class="timeline-description">Your items are being picked and packed with care.</p>
+                            <div class="timeline-location">📍 Apex Warehouse, Pune</div>
+                        </div>
+                    </div>
+
+                    <!-- Shipped -->
+                    <div class="timeline-item active">
+                        <div class="timeline-dot">🚚</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Out for Delivery</h3>
+                                <span class="timeline-time">19 Nov, 8:45 AM</span>
+                            </div>
+                            <p class="timeline-description">Your package is on the way! Our delivery partner is en route to your location.</p>
+                            <div class="timeline-location">📍 En route to Vapi, Gujarat</div>
+                        </div>
+                    </div>
+
+                    <!-- Delivery -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">📦</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Delivered</h3>
+                                <span class="timeline-time">Expected Today</span>
+                            </div>
+                            <p class="timeline-description">Package will be delivered to your doorstep.</p>
+                            <div class="timeline-location">📍 Vapi, Gujarat, IN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ETA Card -->
+            <div class="eta-card">
+                <div class="eta-header">
+                    <div class="eta-date">Today</div>
+                    <div class="eta-label">Estimated Delivery</div>
+                    <p style="color: var(--gray); margin-top: 0.5rem; font-size: 0.9rem;">Between 2:00 PM - 6:00 PM</p>
+                </div>
+
+                <div class="delivery-map">
+                    <div class="map-marker">📍</div>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="info-row">
+                        <span class="info-label">Tracking ID</span>
+                        <span class="info-value">TRK849362710</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Courier</span>
+                        <span class="info-value">BlueDart Express</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ship Method</span>
+                        <span class="info-value">Standard Delivery</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Total Items</span>
+                        <span class="info-value">4 items</span>
+                    </div>
+                </div>
+
+                <div class="courier-contact">
+                    <h4>Delivery Partner</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Rajesh Kumar</p>
+                    <div class="courier-phone">+91 98765 43210</div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary">📞 Call Delivery Partner</button>
+                    <button class="btn btn-secondary">💬 Chat Support</button>
+                    <button class="btn btn-secondary">📧 Email Invoice</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Items -->
+        <div class="order-items">
+            <h2 class="section-title">
+                🛍️ Order Items
+            </h2>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image">
+                        <svg width="120" height="120" viewBox="">
+                            <img src="images/tee.png" width="120" height="120">
+                        </svg>
+                    </div>
+                    <div class="item-name">Velocity Pro Tee</div>
+                    <div class="item-details">Size: L • Black</div>
+                    <span class="item-quantity">Qty: 1</span>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <img src="images/runnig shoes.png" width="120" height="120">
+                        </svg>
+                    </div>
+                    <div class="item-name">Apex Runner X1</div>
+                    <div class="item-details">Size: 10 UK • Orange</div>
+                    <span class="item-quantity">Qty: 1</span>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <img src="images/cap.png" width="120" height="120">
+                        </svg>
+                    </div>
+                    <div class="item-name">Pro Performance Cap</div>
+                    <div class="item-details">One Size • Navy</div>
+                    <span class="item-quantity">Qty: 2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-links">
+                <a href="#help">Help Center</a>
+                <a href="#returns">Returns</a>
+                <a href="#shipping">Shipping Info</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <p style="color: var(--gray);">&copy; 2024 Apex Athletics. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
