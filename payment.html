@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Athletics - Checkout</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Apex</div>
+            <div class="secure-checkout">
+                <span>🔒</span>
+                <span>Secure Checkout</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Checkout Container -->
+    <div class="checkout-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="cart.html">Cart</a>
+            <span>/</span>
+            <span>Checkout</span>
+        </div>
+
+        <!-- Progress Steps -->
+        <div class="progress-steps">
+            <div class="step completed">
+                <div class="step-circle">✓</div>
+                <div class="step-label">Cart</div>
+            </div>
+            <div class="step active">
+                <div class="step-circle">2</div>
+                <div class="step-label">Checkout</div>
+            </div>
+            <div class="step">
+                <div class="step-circle">3</div>
+                <div class="step-label">Payment</div>
+            </div>
+            <div class="step">
+                <div class="step-circle">4</div>
+                <div class="step-label">Confirmation</div>
+            </div>
+        </div>
+
+        <!-- Checkout Content -->
+        <div class="checkout-content">
+            <!-- Forms Section -->
+            <div class="checkout-forms">
+                <!-- Shipping Information -->
+                <div class="form-section">
+                    <h2 class="section-title">
+                        <span class="section-number">1</span>
+                        Shipping Information
+                    </h2>
+                    <form class="form-grid">
+                        <div class="form-group">
+                            <label>First Name <span class="required">*</span></label>
+                            <input type="text" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span class="required">*</span></label>
+                            <input type="text" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Email Address <span class="required">*</span></label>
+                            <input type="email" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Phone Number <span class="required">*</span></label>
+                            <input type="tel" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Street Address <span class="required">*</span></label>
+                            <input type="text" placeholder="House No., Street Name" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Apartment, Suite, etc. (Optional)</label>
+                            <input type="text" placeholder="Apartment, Suite, Floor">
+                        </div>
+                        <div class="form-group">
+                            <label>City <span class="required">*</span></label>
+                            <input type="text" placeholder="Mumbai" required>
+                        </div>
+                        <div class="form-group">
+                            <label>State <span class="required">*</span></label>
+                            <select required>
+                                <option value="">Select State</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="tamil-nadu">Tamil Nadu</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="rajasthan">Rajasthan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>PIN Code <span class="required">*</span></label>
+                            <input type="text" placeholder="400001" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Country <span class="required">*</span></label>
+                            <select required>
+                                <option value="india">India</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Delivery Instructions (Optional)</label>
+                            <textarea placeholder="Any special delivery instructions..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="save-info">
+                                <label for="save-info">Save this information for next time</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="form-section">
+                    <h2 class="section-title">
+                        <span class="section-number">2</span>
+                        Payment Method
+                    </h2>
+
+                    <div class="payment-methods">
+                        <!-- Credit/Debit Card -->
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="card" checked>
+                            <div class="payment-icon">💳</div>
+                            <div class="payment-details">
+                                <h4>Credit / Debit Card</h4>
+                                <p>Pay securely using your card</p>
+                            </div>
+                        </label>
+
+                        <!-- UPI -->
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="upi">
+                            <div class="payment-icon">📱</div>
+                            <div class="payment-details">
+                                <h4>UPI Payment</h4>
+                                <p>Pay using Google Pay, PhonePe, Paytm, etc.</p>
+                            </div>
+                        </label>
+
+                        <!-- Net Banking -->
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="netbanking">
+                            <div class="payment-icon">🏦</div>
+                            <div class="payment-details">
+                                <h4>Net Banking</h4>
+                                <p>Pay directly from your bank account</p>
+                            </div>
+                        </label>
+
+                        <!-- Cash on Delivery -->
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="cod">
+                            <div class="payment-icon">💵</div>
+                            <div class="payment-details">
+                                <h4>Cash on Delivery</h4>
+                                <p>Pay when you receive your order</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Card Payment Form -->
+                    <div class="card-form active">
+                        <div class="card-preview">
+                            <div class="card-chip"></div>
+                            <div class="card-number">•••• •••• •••• ••••</div>
+                            <div class="card-info">
+                                <div>
+                                    <div style="font-size: 0.75rem; opacity: 0.8;">CARDHOLDER NAME</div>
+                                    <div>YOUR NAME</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.75rem; opacity: 0.8;">EXPIRES</div>
+                                    <div>MM/YY</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label>Card Number <span class="required">*</span></label>
+                                <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Cardholder Name <span class="required">*</span></label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Expiry Date <span class="required">*</span></label>
+                                <input type="text" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV <span class="required">*</span></label>
+                                <input type="text" placeholder="123" maxlength="3" required>
+                                <div class="cvv-info">
+                                    <span>ℹ️</span>
+                                    <span>3-digit code on back of card</span>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="save-card">
+                                    <label for="save-card">Save this card for future purchases</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UPI Payment Form -->
+                    <div class="upi-form">
+                        <div class="form-group">
+                            <label>Enter UPI ID <span class="required">*</span></label>
+                            <input type="text" placeholder="yourname@upi" required>
+                        </div>
+                        <p style="text-align: center; margin: 1.5rem 0; color: var(--gray);">OR</p>
+                        <p style="font-weight: 600; margin-bottom: 1rem;">Choose UPI App</p>
+                        <div class="upi-apps">
+                            <div class="upi-app">
+                                <div class="upi-app-icon">📱</div>
+                                <div class="upi-app-name">Google Pay</div>
+                            </div>
+                            <div class="upi-app">
+                                <div class="upi-app-icon">💜</div>
+                                <div class="upi-app-name">PhonePe</div>
+                            </div>
+                            <div class="upi-app">
+                                <div class="upi-app-icon">💙</div>
+                                <div class="upi-app-name">Paytm</div>
+                            </div>
+                            <div class="upi-app">
+                                <div class="upi-app-icon">🏦</div>
+                                <div class="upi-app-name">BHIM UPI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary Sidebar -->
+            <div class="order-summary">
+                <h2 class="summary-title">Order Summary</h2>
+
+                <!-- Order Items -->
+                <div class="order-item">
+                    <div class="item-image-small">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                            <img src="images/tee.png">
+                        </svg>
+                    </div>
+                    <div class="item-details-small">
+                        <h4>Velocity Pro Tee</h4>
+                        <p>Size: L | Black</p>
+                        <p>Qty: 1</p>
+                    </div>
+                    <div class="item-price-small">₹1,999</div>
+                </div>
+
+                <div class="order-item">
+                    <div class="item-image-small">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                        <img src="images/runnig shoes.png">    
+                        </svg>
+                    </div>
+                    <div class="item-details-small">
+                        <h4>Apex Runner X1</h4>
+                        <p>Size: 10 UK | Orange</p>
+                        <p>Qty: 1</p>
+                    </div>
+                    <div class="item-price-small">₹4,999</div>
+                </div>
+
+                <div class="order-item">
+                    <div class="item-image-small">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                        <img src="images/cap.png">    
+                        </svg>
+                    </div>
+                    <div class="item-details-small">
+                        <h4>Pro Performance Cap</h4>
+                        <p>One Size | Navy</p>
+                        <p>Qty: 2</p>
+                    </div>
+                    <div class="item-price-small">₹1,798</div>
+                </div>
+
+                <!-- Summary Calculations -->
+                <div class="summary-row">
+                    <span>Subtotal (4 items)</span>
+                    <span>₹8,796</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>₹99</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span style="color: var(--success);">−₹500</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Tax (GST 18%)</span>
+                    <span>₹1,491</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total Amount</span>
+                    <span>₹9,886</span>
+                </div>
+
+                <a href="tracking.html" class="place-order-btn">Place Order</a>
+
+                <div class="secure-badge">
+                    <span>🔒</span>
+                    <span>Secure SSL Encrypted Payment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#refund">Refund Policy</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <p style="color: var(--gray);">&copy; 2024 Apex Athletics. All rights reserved.</p>
+        </div>
+    </footer>
