@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Athletics - Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">APEX</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Container -->
+    <div class="cart-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Shopping Cart</span>
+        </div>
+
+        <!-- Page Title -->
+        <h1 class="page-title">Shopping Cart</h1>
+
+        <!-- Shipping Banner -->
+        <div class="shipping-banner">
+            <span>🚚</span>
+            <div>
+                <strong>Free Shipping on orders over ₹2,999!</strong>
+                <span style="display: block; font-size: 0.85rem; opacity: 0.9;">You're ₹1,000 away from free shipping</span>
+            </div>
+        </div>
+
+        <!-- Cart Content -->
+        <div class="cart-content">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <div class="cart-header">
+                    <span>Product</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Total</span>
+                    <span></span>
+                </div>
+
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <div class="item-image">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                            <img src="images/tee.png">    
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <h3>Velocity Pro Tee</h3>
+                            <p>Activewear | Size: L</p>
+                            <p>Color: <span class="item-color" style="background: #000;"></span> Black</p>
+                        </div>
+                    </div>
+                    <div class="item-price">₹1,999</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">−</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-total">₹1,999</div>
+                    <button class="remove-btn">×</button>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <div class="item-image">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                            <img src="images/runnig shoes.png">    
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <h3>Apex Runner X1</h3>
+                            <p>Footwear | Size: 10 UK</p>
+                            <p>Color: <span class="item-color" style="background: #3535ff;"></span> Orange</p>
+                        </div>
+                    </div>
+                    <div class="item-price">₹4,999</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">−</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-total">₹4,999</div>
+                    <button class="remove-btn">×</button>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <div class="item-image">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                            <img src="images/cap.png">    
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <h3>Pro Performance Cap</h3>
+                            <p>Accessories | One Size</p>
+                            <p>Color: <span class="item-color" style="background: #004e89;"></span> Navy</p>
+                        </div>
+                    </div>
+                    <div class="item-price">₹899</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">−</button>
+                        <input type="text" class="quantity-input" value="2" readonly>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-total">₹1,798</div>
+                    <button class="remove-btn">×</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2 class="summary-title">Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span>Subtotal (4 items)</span>
+                    <span>₹8,796</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>₹99</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span style="color: var(--success);">−₹500</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Tax (GST 18%)</span>
+                    <span>₹1,491</span>
+                </div>
+
+                <div class="promo-code">
+                    <input type="text" placeholder="Enter promo code">
+                    <button class="apply-btn">Apply Code</button>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>₹9,886</span>
+                </div>
+
+                <a href="payment.html" class="checkout-btn" role="button">Proceed to Checkout</a>
+                <a href="index.html" class="continue-shopping" role="button">Continue Shopping</a>
+
+                <div class="payment-icons">
+                    <div class="payment-icon">VISA</div>
+                    <div class="payment-icon">MC</div>
+                    <div class="payment-icon">AMEX</div>
+                    <div class="payment-icon">UPI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>APEX Athletics</h3>
+                <p>Premium performance gear for athletes who never settle. Elevate your game with APEX.</p>
+                <div class="social-icons">
+                    <span>📘</span>
+                    <span>📷</span>
+                    <span>🐦</span>
+                    <span>▶️</span>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#shipping">Shipping Info</a></li>
+                    <li><a href="#returns">Returns & Exchange</a></li>
+                    <li><a href="#size">Size Guide</a></li>
+                    <li><a href="#track">Track Order</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers, exclusive deals, and updates.</p>
+                <input type="email" placeholder="Your email" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: none; margin-top: 1rem;">
+                <button class="checkout-btn" style="margin-top: 1rem; width: 100%; padding: 0.8rem;">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APEX Athletics. All rights reserved. | Designed by Your Name</p>
+        </div>
+    </footer>
+</body>
+</html>
