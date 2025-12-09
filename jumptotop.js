@@ -1,0 +1,1 @@
+document.body.insertAdjacentHTML('beforeend', '<button onclick="window.scrollTo({top:0,behavior:\'smooth\'})" style="position:fixed;bottom:20px;right:80px;width:50px;height:50px;border-radius:50%;border:none;font-size:24px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999;background:#3535ff;color:#fff">↑</button>');
