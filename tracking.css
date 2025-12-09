@@ -13,7 +13,7 @@
             --info: #17a2b8;
         }
 
-        /* Reset & Base Styles */
+        
         * {
             margin: 0;
             padding: 0;
@@ -38,7 +38,6 @@
             color: inherit;
         }
 
-        /* Header & Navigation */
         header {
             position: fixed;
             width: 100%;
@@ -83,7 +82,6 @@
             color: var(--primary-color);
         }
 
-        /* Tracking Container */
         .tracking-container {
             margin-top: 100px;
             padding: 2rem 5%;
@@ -110,7 +108,7 @@
             color: var(--primary-color);
         }
 
-        /* Success Banner */
+
         .success-banner {
             background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: var(--white);
@@ -147,7 +145,6 @@
             letter-spacing: 1px;
         }
 
-        /* Main Content Grid */
         .tracking-content {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
@@ -155,7 +152,7 @@
             margin-bottom: 2rem;
         }
 
-        /* Tracking Timeline */
+
         .tracking-timeline {
             background: var(--white);
             border-radius: 15px;
@@ -286,7 +283,7 @@
             font-weight: 500;
         }
 
-        /* ETA Card */
+      
         .eta-card {
             background: var(--white);
             border-radius: 15px;
@@ -419,7 +416,7 @@
             color: var(--white);
         }
 
-        /* Order Items */
+
         .order-items {
             background: var(--white);
             border-radius: 15px;
@@ -481,7 +478,7 @@
             display: inline-block;
         }
 
-        /* Animations */
+
         @keyframes scaleIn {
             from {
                 transform: scale(0);
@@ -533,7 +530,7 @@
             }
         }
 
-        /* Footer */
+
         footer {
             background: black;
             color: var(--light);
@@ -559,7 +556,7 @@
             color: var(--primary-color);
         }
 
-        /* Responsive Design */
+
         @media (max-width: 1024px) {
             .tracking-content {
                 grid-template-columns: 1fr;
