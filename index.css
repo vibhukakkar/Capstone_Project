@@ -33,7 +33,7 @@
             color: inherit;
         }
 
-        /* Header & Navigation */
+  
         header {
             position: fixed;
             width: 100%;
@@ -105,7 +105,7 @@
             color: var(--primary-color);
         }
 
-        /* Mobile Menu Toggle */
+
         .menu-toggle {
             display: none;
             flex-direction: column;
@@ -120,7 +120,7 @@
             transition: 0.3s;
         }
 
-        /* Hero Section */
+  
         .hero {
             margin-top: 80px;
             height: 90vh;
@@ -199,7 +199,7 @@
             color: var(--dark);
         }
 
-        /* Features Section */
+
         .features {
             padding: 80px 5%;
             background: var(--light);
@@ -266,7 +266,7 @@
             color: var(--secondary-color);
         }
 
-        /* Products Section */
+
         .products {
             padding: 80px 5%;
             max-width: 1400px;
@@ -477,7 +477,7 @@
             color: var(--gray);
         }
 
-        /* Animations */
+      
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -489,7 +489,6 @@
             }
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
