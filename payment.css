@@ -12,7 +12,6 @@
             --danger: #dc3545;
         }
 
-        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -37,7 +36,7 @@
             color: inherit;
         }
 
-        /* Header & Navigation */
+
         header {
             position: fixed;
             width: 100%;
@@ -73,7 +72,6 @@
             font-weight: 600;
         }
 
-        /* Checkout Container */
         .checkout-container {
             margin-top: 100px;
             padding: 2rem 5%;
@@ -100,7 +98,6 @@
             color: var(--primary-color);
         }
 
-        /* Progress Steps */
         .progress-steps {
             display: flex;
             justify-content: center;
@@ -163,14 +160,14 @@
             font-weight: 600;
         }
 
-        /* Checkout Content */
+
         .checkout-content {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
             gap: 2rem;
         }
 
-        /* Forms Section */
+
         .checkout-forms {
             display: flex;
             flex-direction: column;
@@ -265,7 +262,6 @@
             cursor: pointer;
         }
 
-        /* Payment Methods */
         .payment-methods {
             display: flex;
             flex-direction: column;
@@ -321,7 +317,6 @@
             color: var(--gray);
         }
 
-        /* Card Payment Form */
         .card-form {
             display: none;
             margin-top: 1rem;
@@ -372,7 +367,7 @@
             margin-top: 0.5rem;
         }
 
-        /* UPI Form */
+
         .upi-form {
             display: none;
             margin-top: 1rem;
@@ -417,7 +412,7 @@
             font-weight: 600;
         }
 
-        /* Order Summary Sidebar */
+
         .order-summary {
             background: var(--white);
             border-radius: 15px;
@@ -534,7 +529,7 @@
             font-size: 0.9rem;
         }
 
-        /* Footer */
+
         footer {
             background: black;
             color: var(--light);
@@ -559,7 +554,6 @@
             color: var(--primary-color);
         }
 
-        /* Responsive Design */
         @media (max-width: 1024px) {
             .checkout-content {
                 grid-template-columns: 1fr;
