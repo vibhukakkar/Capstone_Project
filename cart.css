@@ -123,7 +123,7 @@
             font-weight: bold;
         }
 
-        /* Cart Page Styles */
+
         .cart-container {
             margin-top: 100px;
             padding: 2rem 5%;
@@ -163,7 +163,7 @@
             margin-top: 2rem;
         }
 
-        /* Cart Items Section */
+
         .cart-items {
             background: var(--white);
             border-radius: 15px;
@@ -292,7 +292,6 @@
             transform: scale(1.2);
         }
 
-        /* Cart Summary Section */
         .cart-summary {
             background: var(--white);
             border-radius: 15px;
@@ -422,7 +421,7 @@
             color: var(--gray);
         }
 
-        /* Empty Cart State */
+
         .empty-cart {
             text-align: center;
             padding: 4rem 2rem;
@@ -447,7 +446,7 @@
             font-size: 1.1rem;
         }
 
-        /* Shipping Info Banner */
+
         .shipping-banner {
             background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: var(--white);
@@ -464,7 +463,7 @@
             font-size: 1.5rem;
         }
 
-        /* Footer */
+   
         footer {
             background: black;
             color: var(--light);
@@ -521,7 +520,6 @@
             color: var(--gray);
         }
 
-        /* Responsive Design */
         @media (max-width: 1024px) {
             .cart-content {
                 grid-template-columns: 1fr;
